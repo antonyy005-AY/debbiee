@@ -4,7 +4,7 @@ const closePopup = document.getElementById("closePopup");
 const newMsgBtn = document.getElementById("newMsgBtn");
 const mainMessage = document.getElementById("mainMessage");
 const card = document.getElementById("birthdayCard");
-const balloonBtn = document.getElementById("balloonBtn");
+
 
 const messages = [
   "You are my favorite person, and today is all about you 💕",
