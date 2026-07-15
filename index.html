@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Bestie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-bg">
+    <span>🎈</span>
+    <span>💖</span>
+    <span>✨</span>
+    <span>🎂</span>
+    <span>🎉</span>
+    <span>🌸</span>
+  </div>
+
+  <main class="card" id="birthdayCard">
+    <div class="glow"></div>
+
+    <h1>Happy Birthday lOVe! 💖 🎉</h1>
+    <p id="mainMessage">You are the sweetest soul ever. Click below for a surprise!</p>
+
+    <div class="btn-group">
+      <button id="surpriseBtn">Open Surprise!!!!</button>
+      <button id="newMsgBtn">New Message</button>
+      <button id="balloonBtn">Baloon</button>
+    </div>
+  </main>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>🎂 Surprise Sweet Heart!</h2>
+      <p>Happy Birthday, my love. May your life always be full of happiness, peace, and everything your heart desires.</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </div>
+
+  <div id="balloonModal" class="balloon-modal">
+  <div class="balloon-panel">
+    <h2>🎈 Balloon Surprise</h2>
+    <p>Click each balloon to pop it and reveal a message.</p>
+
+    <div class="balloon-row">
+      <div class="balloon" data-msg="You are truly special 💖">🎈</div>
+      <div class="balloon" data-msg="Keep smiling always ✨">🎈</div>
+      <div class="balloon" data-msg="You deserve all the love 🌸">🎈</div>
+      <div class="balloon" data-msg="Happy Birthday, Bestie 🎂">🎈</div>
+    </div>
+
+    <p id="balloonMessage" class="balloon-message">Click a balloon to see a message.</p>
+    <button id="closeBalloon">Close</button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
