@@ -162,7 +162,7 @@ button:active {
 .balloon-panel {
   background: white;
   width: 100%;
-  max-width: 420px;
+  max-width: 600px;
   border-radius: 18px;
   padding: 26px;
   text-align: center;
@@ -217,4 +217,67 @@ button:active {
   font-weight: bold;
   color: #d63384;
   margin-top: 10px;
+}
+
+/* page 3  */
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.envelope-wrap {
+  cursor: pointer;
+  perspective: 1000px;
+}
+
+.envelope {
+  position: relative;
+  width: 600px;
+  height: 220px;
+  background: #ffb6c1;
+  border-radius: 12px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+
+.flap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-top: 110px solid #ff7aa2;
+  transform-origin: top;
+  transition: transform 0.8s ease;
+  z-index: 3;
+}
+
+.letter {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: -180px;
+  height: 180px;
+  background: white;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+  transition: bottom 0.8s ease;
+  z-index: 1;
+}
+
+.envelope-wrap.open .flap {
+  transform: rotateX(180deg);
+}
+
+.envelope-wrap.open .letter {
+  bottom: 20px;
 }
